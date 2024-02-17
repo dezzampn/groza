@@ -1,0 +1,206 @@
+
+
+
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  color: white;
+  background-color: #bbbb9c; 
+  background-image: url(image/love.jpg);
+  background-size: 100%;
+}
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em }
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: rgb(255, 0, 234) }
+a:visited {
+  color: rgb(128, 0, 0) }
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
+
+
+ 
+  .form-wrap {
+    width: 640px;
+    height: 720px;
+    background: #ffd500;/* Цвет фона */
+    border-radius: 20px;
+    border: 4px double black; /* Параметры границы */
+  }
+  .profile {
+    width: 240px;
+    float: left;
+    text-align: center;
+    padding: 30px;
+  }
+  form {
+    background: white;/* Цвет фона */
+    float: left;
+    width: 210px;
+    height: 600px;
+    padding: 60px;/* Поля вокруг текста */
+    border-radius: 0 20px 20px 0;
+    color: #7b7b7b; 
+  }
+  .form-wrap:after, form div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  form div {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 50px;
+  }
+  h1:after {
+    content: "\2042";
+    font-size: 40px;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 150px;
+  }
+  /********************** стилизация элементов формы **********************/
+  label, span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  input[type="text"], input[type="email"] {
+    border-width: 0;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: #e6e6e6;
+  }
+  input[type="text"]:focus, input[type="email"]:focus {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+  }
+  .radio label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    line-height: 40px;
+  }
+  .radio input {
+    position: absolute;  
+    opacity: 0;
+  }
+  .radio-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .male:before {
+    content: "\25D0";
+    font-family: FontAwesome;
+    font-weight: bold;
+  }
+  .female:before {
+    content: "\25D1";
+    font-family: FontAwesome;
+    font-weight: bold;
+  }
+  .radio label:hover input ~ .radio-control,
+  .radiol input:focus ~ .radio-control {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+  }
+  .radio input:checked ~ .radio-control {
+    color: red;
+  }
+  select {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;
+    -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+    -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+  }
+  select::-ms-expand {
+    display: none; /*убираем галочку в IE*/
+  }
+  .select-arrow {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+  }
+  button {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: #60e6c5;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+  }
+  /********************** добавляем форме адаптивность **********************/
+  @media (max-width: 600px) {
+    .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
+    .profile, form {float: none; width: 100%;}
+    h1 {margin-top: auto; padding-bottom: 50px;}
+    form {border-radius: 0 0 20px 20px;}
+  }
+
+  input[type="tel"]{
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+  }
+
+
+  
+  
